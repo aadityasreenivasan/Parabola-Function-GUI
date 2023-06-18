@@ -28,4 +28,12 @@ mainWindow.geometry("640x480")
 canvas = tkinter.Canvas(mainWindow, width=640, height=480)
 canvas.grid(row=0, column=0)
 
+draw_axes(canvas)
+
+for x in range(-100, 100):
+    y = parablola(x)
+    plot(canvas, x, -y)
+
+mainWindow.mainloop()
+
 
