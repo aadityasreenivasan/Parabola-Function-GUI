@@ -17,6 +17,7 @@ def draw_axes(canvas):
     canvas.create_line(-x_origin, 0, x_origin, 0, fill="black")
     canvas.create_line(0, y_origin, 0, -y_origin, fill="black")
 
+
 def plot(canvas, x, y):
     canvas.create_line(x, y, x + 1, y + 1, fill="red")
 
@@ -35,5 +36,6 @@ for x in range(-100, 100):
     plot(canvas, x, -y)
 
 mainWindow.mainloop()
+
 
 
